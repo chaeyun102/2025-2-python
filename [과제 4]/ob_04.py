@@ -11,6 +11,7 @@ class Course:
         return self.avge
     
     def info(self):
+        self.avge = sum(self.scores) /len(self.scores)
         result = '과목:'+self.name+', 평균: '+str(self.avge)
         return result
 
